@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../roboshop-ansible-roles-tf"
+		},
+		{
+			"path": "../../terraform-roboshop-app_cm"
+		}
+	],
+	"settings": {}
+}
