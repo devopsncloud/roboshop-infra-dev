@@ -73,7 +73,7 @@ pipeline {
             }
         }
 
-
+    }
 
 
     post { 
@@ -92,4 +92,4 @@ pipeline {
     }
 }
 
-}
+
