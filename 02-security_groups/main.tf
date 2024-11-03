@@ -1,6 +1,6 @@
 ####################DATA-BASE-SECURITY GROUPS#######################################
 module "mongodb" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -10,7 +10,7 @@ module "mongodb" {
 }
 
 module "redis" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -20,7 +20,7 @@ module "redis" {
 }
 
 module "mysql" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -30,7 +30,7 @@ module "mysql" {
 }
 
 module "rabbitmq" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -42,7 +42,7 @@ module "rabbitmq" {
 ####################APP-SECURITY GROUPS#######################################
 
 module "catalogue" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -53,7 +53,7 @@ module "catalogue" {
 
 
 module "user" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -63,7 +63,7 @@ module "user" {
 }
 
 module "cart" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -74,7 +74,7 @@ module "cart" {
 
 
 module "shipping" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -84,7 +84,7 @@ module "shipping" {
 }
 
 module "payment" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -98,7 +98,7 @@ module "payment" {
 ############################WEB-SECURITY-GROUP#################################
 
 module "web" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -110,7 +110,7 @@ module "web" {
 ##############################APP-LOAD-BALANCER-SG################################
 
 module "app_alb" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -122,7 +122,7 @@ module "app_alb" {
 ##############################WEB-LOAD-BALANCER-SG################################
 
 module "web_alb" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_ssm_parameter.vpc_id.value
@@ -135,7 +135,7 @@ module "web_alb" {
 ############################VPN-SECURITY-GROUP#################################
 
 module "vpn" {
-  source       = "E:/SivaDevOps/terraform/terraform_aws_security_group"
+  source       = "http::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   vpc_id       = data.aws_vpc.default.id
