@@ -83,15 +83,15 @@ module "shipping" {
   # sg_ingress_rules = var.mongodb_sg_ingress_rules
 }
 
-# module "payment" {
-#   source       = "git::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
-#   project_name = var.project_name
-#   environment  = var.environment
-#   vpc_id       = data.aws_ssm_parameter.vpc_id.value
-#   sg_desc      = "security group for payment"
-#   sg_name      = "payment"
-#   # sg_ingress_rules = var.mongodb_sg_ingress_rules
-# }
+module "payment" {
+  source       = "git::https://github.com/devopsncloud/roboshop-infra-dev.git?ref=main"
+  project_name = var.project_name
+  environment  = var.environment
+  vpc_id       = data.aws_ssm_parameter.vpc_id.value
+  sg_desc      = "security group for payment"
+  sg_name      = "payment"
+  # sg_ingress_rules = var.mongodb_sg_ingress_rules
+}
 
 
 
